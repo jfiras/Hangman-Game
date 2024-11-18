@@ -1,0 +1,116 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up a basic font for the game */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* Main header styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Game container styling */
+#container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  max-width: 100%;
+}
+
+/* Hint box style */
+#hint {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #888;
+  font-style: italic;
+}
+
+/* Styling for the word display (underscores or letters) */
+#word {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Letters section (buttons for each letter) */
+#letters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.inputLetters {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inputLetters:hover {
+  background-color: #45a049;
+}
+
+.inputLetters:active {
+  background-color: #388e3c;
+}
+
+.disabledLetter {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Styling for attempts and score */
+#attempts,
+#score {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#attempts {
+  color: #e53935; /* Red color for attempts */
+}
+
+#score {
+  color: #2196f3; /* Blue color for score */
+}
+
+#remain,
+#result {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Centering elements within the body */
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
